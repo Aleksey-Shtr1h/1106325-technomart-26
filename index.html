@@ -9,9 +9,18 @@
       <div>
         <a href="#">Техномарт</a>
         <div>
-          <span>Поиск</span>
-          <a href="#">Закладки</a>
-          <a href="#">Корзина</a>
+          <form action="#" name="Поиск" method="post">
+            <label for="search" aria-label="Поиск">icon-search</label>
+            <input type="search" name="Поиск" id="search" placeholder="Поиск">
+          </form>
+          <a href="#">
+            Закладки:
+            <p>0</p>
+          </a>
+          <a href="#">
+            Корзина:
+            <p>0</p>
+          </a>
           <a href="#">Оформить заказ</a>
         </div>
       </div>
@@ -21,15 +30,15 @@
           Интернет-магазин строительных материалов и инструментов для ремонта
         </h1>
         <div>
-          <a href="tel:78125550555">+7 (812) 555-05-55</a>
+          <a href="tel:78125550555" aria-label="Телефон магазина">+7 (812) 555-05-55</a>
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <ul>
           <li>
-            <a href="#">Войти</a>
+            <a href="#" aria-label="Войти в личный кабинет">Войти</a>
           </li>
           <li>
-            <a href="#">Регистрация</a>
+            <a href="#" aria-label="Зарегистрировать личный кабинет">Регистрация</a>
           </li>
         </ul>
       </section>
@@ -177,42 +186,42 @@
         <div class="brand_item">
           <ul>
             <li>
-              <a href="#">
+              <a href="#" aria-label="Производитель Бош">
                 <img src="img/bosch.png" width="126" height="37" alt="BOSCH">
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#" aria-label="Производитель Макита">
                 <img src="img/Makita.png" width="123" height="40" alt="Makita">
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#" aria-label="Производитель Деволт">
                 <img src="img/DeWALT.png" width="146" height="44" alt="DeWalt">
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#" aria-label="Производитель ИНТЕРСКОЛ">
                 <img src="img/Интерскол.png" width="200" height="88" alt="ИНТЕРСКОЛ">
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#" aria-label="Производитель Хитачи">
                 <img src="img/Hitachi.png" width="169" height="31" alt="HITACHI">
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#" aria-label="Производитель ЭлДжи">
                 <img src="img/LG.png" width="121" height="73" alt="LG">
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#" aria-label="Производитель АЕГ">
                 <img src="img/AEG.png" width="151" height="96" alt="AEG">
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#" aria-label="Производитель Метабо">
                 <img src="img/Metabo.png" width="204" height="69" alt="Metabo">
               </a>
             </li>
@@ -327,7 +336,7 @@
         </div>
         <div>
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <a href="tel:78125550555">+7 (812) 555-05-55</a>
+          <a href="tel:78125550555" aria-label="Телефон магазина">+7 (812) 555-05-55</a>
           <ul>
             <li>
               <a href="#">Материалы</a>
@@ -350,20 +359,20 @@
         <div>
           <ul>
             <li>
-              <a href="#">Вконтакте</a>
+              <a href="#" aria-label="Группа в Вконтакте">Вконтакте</a>
             </li>
             <li>
-              <a href="#">Фейсбук</a>
+              <a href="#" aria-label="Группа в Фейсбуке">Фейсбук</a>
             </li>
             <li>
-              <a href="#">Инстаграм</a>
+              <a href="#" aria-label="Группа в Инстаграме">Инстаграм</a>
             </li>
           </ul>
         </div>
         <div>
           <p>
             Обратная связь:
-            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <a href="mailto:mail@htmlacademy.ru" aria-label="Написать на почту">mail@htmlacademy.ru</a>
           </p>
           <p>
             Разработано:
@@ -372,5 +381,34 @@
         </div>
       </div>
     </footer>
+    <section>
+      <h2 class="visually-hidden">Напишите нам</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="user-login">
+            Ваше имя:
+          </label>
+          <input id="user-login" type="text" name="login" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="user-email">
+            Ваш e-mail:
+          </label>
+          <input id="user-email" type="text" name="email" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="user-text">
+            Текст письма:
+          </label>
+          <input id="user-text" type="text" name="user-text" placeholder="В свободной форме">
+        </p>
+        <button type="submit">
+          Отправить
+        </button>
+        <button type="button" aria-label="Закрыть">
+          Закрыть
+        </button>
+      </form>
+    </section>
   </body>
   </html>
