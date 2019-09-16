@@ -110,8 +110,8 @@
               <label for="filter-BOSCH">BOSCH</label>
             </li>
             <li>
-              <input type="checkbox" name="ИНТЕРСКОЛ" id="filter-ИНТЕРСКОЛ">
-              <label for="filter-ИНТЕРСКОЛ">ИНТЕРСКОЛ</label>
+              <input type="checkbox" name="Interskol" id="filter-Interskol">
+              <label for="filter-Interskol">ИНТЕРСКОЛ</label>
             </li>
             <li>
               <input type="checkbox" name="MAKITA" id="filter-MAKITA" checked>
@@ -132,16 +132,16 @@
           <legend>Питание:</legend>
           <ul>
             <li>
-              <input type="radio" name="BATTERY" value="BATTERY" id="filter-BATTERY">
+              <input type="radio" name="source_of_power" value="BATTERY" id="filter-BATTERY" checked>
               <label for="filter-BATTERY">АККОМУЛЯТОРНЫЕ</label>
             </li>
             <li>
-              <input type="radio" name="NETWORK" value="NETWORK" id="filter-NETWORK">
+              <input type="radio" name="source_of_power" value="NETWORK" id="filter-NETWORK">
               <label for="filter-NETWORK">СЕТЕВЫЕ</label>
             </li>
           </ul>
         </fieldset>
-        <button>ПОКАЗАТЬ</button>
+        <button type="submit">ПОКАЗАТЬ</button>
       </form>
     </section>
 
@@ -364,20 +364,18 @@
   </footer>
   <section>
     <h2 class="visually-hidden">Покупка товара</h2>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          Товар добавлен в корзину!
-        </p>
-        <button type="submit">
-          ОФОРМИТЬ ЗАКАЗ
-        </button>
-        <button type="button">
-          ПРОДОЛЖИТЬ ПОКУПКИ
-        </button>
-        <button type="button" aria-label="Закрыть">
-          Закрыть
-        </button>
-      </form>
-    </section>
+    <p>
+      Товар добавлен в корзину!
+    </p>
+    <button type="submit">
+      ОФОРМИТЬ ЗАКАЗ
+    </button>
+    <button type="button">
+      ПРОДОЛЖИТЬ ПОКУПКИ
+    </button>
+    <button type="button" aria-label="Закрыть">
+      Закрыть
+    </button>
+  </section>
 </body>
 </html>

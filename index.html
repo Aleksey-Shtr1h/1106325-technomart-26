@@ -388,19 +388,19 @@
           <label for="user-login">
             Ваше имя:
           </label>
-          <input id="user-login" type="text" name="login" placeholder="Имя Фамилия">
+          <input id="user-login" type="text" name="user-login" placeholder="Имя Фамилия">
         </p>
         <p>
           <label for="user-email">
             Ваш e-mail:
           </label>
-          <input id="user-email" type="text" name="email" placeholder="email@example.com">
+          <input id="user-email" type="email" name="user-email" placeholder="email@example.com">
         </p>
         <p>
-          <label for="user-text">
-            Текст письма:
-          </label>
-          <input id="user-text" type="text" name="user-text" placeholder="В свободной форме">
+          Текст письма:
+        </p>
+        <p>
+          <textarea name="user-text" id="user-text" cols="30" rows="10" maxlength="999" placeholder="В свободной форме"></textarea>
         </p>
         <button type="submit">
           Отправить
