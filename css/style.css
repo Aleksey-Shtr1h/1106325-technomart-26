@@ -1,0 +1,299 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cuprum", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+
+  background-color: #fff;
+}
+
+h1,h2,h3,h4,h5{
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+
+  display: inline-block;
+}
+
+ul,
+li{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header{
+  background-color: #f1f5f7;
+}
+
+.top-menu{
+  background-color: #293449;
+}
+
+.logo{
+  background-color: #ee3643;
+}
+
+.top-menu_button{
+  font-size: 17px;
+  line-height: 18px;
+  color: #fff;
+  vertical-align: middle;
+  text-transform: none;
+
+  border: none;
+}
+
+.top-menu_button:hover{
+  background-color: #212a3a;
+}
+
+.top-menu_button:active{
+  background-color: #161d29;
+}
+
+.top-menu_button:hover .green-button{
+  background-color: #5fbb2d;
+}
+
+.top-menu_button:active .green-button{
+  background-color: #518534;
+}
+
+.top-menu_button:active input{
+  background-color: #293449;
+}
+
+.top-menu_button input{
+  background-color: transparent;
+  border: none;
+}
+
+.top-menu_button input:active{
+  background-color: #fff;
+}
+
+.top-menu_button input:focus{
+  background-color: #fff;
+  border: none;
+  color: #000;
+}
+
+.green-button{
+  background-color: #63a63e;
+}
+
+.registration-title{
+  margin: 0;
+}
+
+.registration h1,
+.registration .registration-title{
+  font-size: 16px;
+  line-height: 23px;
+  color: #ee3643;
+  vertical-align: middle;
+  text-transform: none;
+  font-style: italic;
+}
+
+.registration li{
+  background-color: #fff;
+}
+
+.phone-button-header{
+  color: #ee3643;
+}
+
+.registration-button{
+  color: #000;
+}
+
+.registration-button:hover{
+  color: #ee3643;
+}
+
+.registration-button:active{
+  color: #000;
+  opacity: 0.3;
+}
+
+.menu-navigation{
+  font-size: 17px;
+  line-height: 17px;
+  vertical-align: middle;
+  text-transform: none;
+
+  background-color: #32425c;
+}
+
+.menu-navigation li:hover{
+  background-color: #293449;
+}
+
+.menu-navigation li:active{
+  background-color: #1d2739;
+}
+
+.footer{
+  color: #fff;
+  background-color: #32425c;
+}
+
+.footer p{
+  color: #fff;
+}
+
+.footer-top-menu{
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer-top-menu a{
+  vertical-align: middle;
+  text-transform: none;
+
+  text-decoration: none;
+}
+
+.footer-top-menu a:hover{
+  text-decoration: underline;
+}
+
+.footer-top-menu a:active{
+  text-decoration: none;
+
+  opacity: 0.3;
+}
+
+.footer-botton-menu .phone-button-footer{
+  color: #fff;
+}
+
+.footer-botton-menu .phone-button-footer:hover{
+  text-decoration: none;
+}
+
+.footer-botton-menu .phone-button-footer:active{
+  text-decoration: none;
+}
+
+.footer-botton-menu{
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer-botton-menu a{
+  vertical-align: middle;
+  text-transform: none;
+  text-decoration: none;
+  color: #ffd180;
+}
+
+.footer-botton-menu a:hover{
+  text-decoration: underline;
+}
+
+.footer-botton-menu a:active{
+  text-decoration: none;
+
+  opacity: 0.3;
+}
+
+.footer-bottom_level{
+  font-size: 16px;
+  line-height: 18px;
+
+  background-color: #293449;
+}
+
+.social-network li{
+  background-color: #212a3a;
+
+  border-radius: 50px;
+}
+
+.social-network li:hover{
+  background-color: #ee3643;
+}
+
+.social-network li:active{
+  background-color: #ee3643;
+}
+
+.footer-bottom_info a{
+  color: #b89d6e;
+}
+
+.footer-bottom_info a:hover{
+  color: #b89d6e;
+
+  text-decoration: underline;
+}
+
+.footer-bottom_info a:active{
+  color: #ee3643;
+
+  text-decoration: none;
+}
+
+/*////////////////////catalog.html*/
+
+.registration-link-inner{
+  background-color: #fff;
+}
+
+.registration-link{
+  font-size: 16px;
+  line-height: 18px;
+  vertical-align: middle;
+  text-transform: none;
+  text-decoration: underline;
+  color: #32425c;
+}
+
+.registration-link:hover{
+  color: #ee3643;
+}
+
+.registration-link:active{
+  color: #32425c;
+  opacity: 0.3;
+}
+
+.registration-link-user{
+  font-size: 21px;
+  line-height: 21px;
+  vertical-align: middle;
+  text-transform: none;
+  color: #000;
+}
+
+.registration-link-user:active{
+  color: #000;
+  opacity: 0.3;
+}
+
+.breadcrumbs{
+  font-family: "PTSans", sans-serif;
+  background-color: #fff;
+}
+
+.breadcrumbs a{
+  color: #000;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.catalog-name{
+  background-color: #f2f6f8;
+}

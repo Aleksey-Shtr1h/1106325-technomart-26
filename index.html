@@ -3,15 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>Главная</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header>
-      <div>
-        <a href="#">Техномарт</a>
-        <div>
+    <header class="header">
+      <div class="top-menu">
+        <div class="logo">
+          <a href="#">
+            <img src="img/logo-technomart.svg" width="109" height="19" alt="Logo">
+          </a>
+        </div>
+        <div class="top-menu_button">
           <form action="#" name="Поиск" method="post">
-            <label for="search" aria-label="Поиск">icon-search</label>
-            <input type="search" name="Поиск" id="search" placeholder="Поиск">
+            <label for="search" aria-label="Поиск"></label>
+            <input type="search" name="Поиск" id="search" placeholder="Поиск:">
           </form>
           <a href="#">
             Закладки:
@@ -21,29 +29,31 @@
             Корзина:
             <span>0</span>
           </a>
-          <a href="#">Оформить заказ</a>
+          <a class="green-button" href="#">
+            Оформить заказ
+          </a>
         </div>
       </div>
 
-      <section>
+      <section class="registration">
         <h1>
           Интернет-магазин строительных материалов и инструментов для ремонта
         </h1>
         <div>
-          <a href="tel:78125550555" aria-label="Телефон магазина">+7 (812) 555-05-55</a>
+          <a class="phone-button-header" href="tel:78125550555" aria-label="Телефон магазина">+7 (812) 555-05-55</a>
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <ul>
           <li>
-            <a href="#" aria-label="Войти в личный кабинет">Войти</a>
+            <a class="registration-button" href="#" aria-label="Войти в личный кабинет">Войти</a>
           </li>
           <li>
-            <a href="#" aria-label="Зарегистрировать личный кабинет">Регистрация</a>
+            <a class="registration-button" href="#" aria-label="Зарегистрировать личный кабинет">Регистрация</a>
           </li>
         </ul>
       </section>
 
-      <nav>
+      <nav class="menu-navigation">
         <ul>
           <li>
             <a href="#">Главная</a>
@@ -312,10 +322,14 @@
       </section>
     </main>
 
-    <footer>
-      <div class="top_level">
-        <div>
-          <a href="#">Техномарт</a>
+    <footer class="footer">
+      <div class="footer-top-level">
+        <div class="footer-top-menu">
+          <div class="logo">
+            <a href="#">
+              <img src="img/logo-technomart.svg" alt="logo">
+            </a>
+          </div>
           <ul>
             <li>
               <a href="#">Компания</a>
@@ -334,9 +348,9 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="footer-botton-menu">
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <a href="tel:78125550555" aria-label="Телефон магазина">+7 (812) 555-05-55</a>
+          <a class="phone-button-footer" href="tel:78125550555" aria-label="Телефон магазина">+7 (812) 555-05-55</a>
           <ul>
             <li>
               <a href="#">Материалы</a>
@@ -354,12 +368,12 @@
         </div>
       </div>
 
-      <div class="bottom_level">
+      <div class="footer-bottom_level">
         <p>© 2010–2019 Компания «Техномарт» <br>Все права защищены</p>
-        <div>
+        <div class="social-network">
           <ul>
             <li>
-              <a href="#" aria-label="Группа в Вконтакте">Вконтакте</a>
+              <a clas href="#" aria-label="Группа в Вконтакте">Вконтакте</a>
             </li>
             <li>
               <a href="#" aria-label="Группа в Фейсбуке">Фейсбук</a>
@@ -369,7 +383,7 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="footer-bottom_info">
           <p>
             Обратная связь:
             <a href="mailto:mail@htmlacademy.ru" aria-label="Написать на почту">mail@htmlacademy.ru</a>
