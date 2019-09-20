@@ -187,6 +187,7 @@ li {
   line-height: 30px;
   color: #fff;
   font-weight: 700;
+  text-transform: none;
 }
 
 .service-btn {
@@ -459,6 +460,12 @@ li {
   background-color: #293449;
 }
 
+.footer-bottom-level-text{
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: none;
+}
+
 .social-network li {
   background-color: #212a3a;
 
@@ -471,6 +478,10 @@ li {
 
 .social-network li:active {
   background-color: #ee3643;
+}
+
+.footer-bottom-info {
+  text-transform: none;
 }
 
 .footer-bottom-info a {
