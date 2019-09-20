@@ -1,9 +1,9 @@
-*{
+* {
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Cuprum", sans-serif;
+  font-family: 'Cuprum','Arial', sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
@@ -13,19 +13,16 @@ body {
   background-color: #fff;
 }
 
-h1,h2,h3,h4,h5{
-  margin: 0;
+h1,h2,h3,h4,h5 {
 }
 
-a{
+a {
   text-decoration: none;
   color: #fff;
-
-  display: inline-block;
 }
 
 ul,
-li{
+li {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -33,19 +30,19 @@ li{
 
 /*////////////////////Header*/
 
-.header{
+.header {
   background-color: #f1f5f7;
 }
 
-.top-menu{
+.header-top-menu {
   background-color: #293449;
 }
 
-.logo{
+.header-logo, .footer-logo {
   background-color: #ee3643;
 }
 
-.top-menu_btn{
+.header-top-menu-btn {
   font-size: 17px;
   line-height: 18px;
   color: #fff;
@@ -55,51 +52,53 @@ li{
   border: none;
 }
 
-.top-menu_btn:hover{
+.header-top-menu-btn:hover {
   background-color: #212a3a;
 }
 
-.top-menu_btn:active{
+.header-top-menu-btn:active {
   background-color: #161d29;
 }
 
-.top-menu_btn:hover .green-btn{
+.header-top-menu-btn:hover .order-now-btn {
   background-color: #5fbb2d;
 }
 
-.top-menu_btn:active .green-btn{
+.header-top-menu-btn:active .order-now-btn {
   background-color: #518534;
 }
 
-.top-menu_btn:active input{
+.header-top-menu-btn:active input {
   background-color: #293449;
 }
 
-.top-menu_btn input{
+.header-top-menu-btn input {
   background-color: transparent;
   border: none;
 }
 
-.top-menu_btn input:active{
+.header-top-menu-btn input:active {
   background-color: #fff;
 }
 
-.top-menu_btn input:focus{
+.header-top-menu-btn input:focus {
   background-color: #fff;
   border: none;
   color: #000;
 }
 
-.green-btn{
+.order-now-btn {
   background-color: #63a63e;
 }
 
-.registration-title{
-  margin: 0;
+.registration-title {
 }
 
-.registration h1,
-.registration .registration-title{
+.header-registration h1,
+.header-registration .header-registration-title {
+  margin: 0;
+
+  font-weight: 400;
   font-size: 16px;
   line-height: 23px;
   color: #ee3643;
@@ -108,28 +107,28 @@ li{
   font-style: italic;
 }
 
-.registration li{
+.header-registration li {
   background-color: #fff;
 }
 
-.phone-btn-header{
+.header-phone-btn {
   color: #ee3643;
 }
 
-.registration-btn{
+.header-registration-btn {
   color: #000;
 }
 
-.registration-btn:hover{
+.header-registration-btn:hover {
   color: #ee3643;
 }
 
-.registration-btn:active{
+.header-registration-btn:active {
   color: #000;
   opacity: 0.3;
 }
 
-.menu-navigation{
+.header-menu-navigation {
   font-size: 17px;
   line-height: 17px;
   vertical-align: middle;
@@ -138,44 +137,44 @@ li{
   background-color: #32425c;
 }
 
-.menu-navigation li:hover{
+.header-menu-navigation li:hover {
   background-color: #293449;
 }
 
-.menu-navigation li:active{
+.header-menu-navigation li:active {
   background-color: #1d2739;
 }
 
 /*////////////////////Main*/
 
-.category-service-item1{
+.category-service-item1 {
   background-color: #ffbf47;`
 }
 
-.category-service-item2{
+.category-service-item2 {
   background-color: #3bbce3;`
 }
 
-.category-service-item3{
+.category-service-item3 {
   background-color: #dc91d8;`
 }
 
-.category-service-item4{
+.category-service-item4 {
   background-color: #8ed78f;`
 }
 
-.category-service-item5{
+.category-service-item5 {
   background-color: #ffc047;`
 }
 
-.service-title{
+.service-title {
   font-size: 24px;
   line-height: 30px;
   color: #fff;
   font-weight: 700;
 }
 
-.service-btn{
+.service-btn {
   font-size: 14px;
   line-height: 18px;
   vertical-align: middle;
@@ -183,34 +182,34 @@ li{
   background-color: rgba(0,0,0,0.1);
 }
 
-.service-btn:hover{
+.service-btn:hover {
   background-color: rgba(0,0,0,0.2);
 }
 
-.service-btn:active{
+.service-btn:active {
   background-color: rgba(0,0,0,0.3);
 }
 
-.slider-wrap{
+.slider-wrap {
   background-image: url(../img/Slider1_2.jpg);
   background-repeat: no-repeat;
 }
 
-.slider-title{
+.slider-title {
   font-size: 36px;
   line-height: 36px;
   color: #fff;
   font-weight: 700;
 }
 
-.slider-text{
+.slider-text {
   font-size: 18px;
   line-height: 24px;
   color: #fff;
   text-transform: none;
 }
 
-.main-btn{
+.main-btn {
   font-size: 14px;
   line-height: 18px;
   vertical-align: middle;
@@ -218,37 +217,37 @@ li{
   background-color: #ee3643;
 }
 
-.main-btn:hover{
+.main-btn:hover {
   background-color: #ca2c37;
 }
 
-.main-btn:active{
+.main-btn:active {
   background-color: #ba2732;
 }
 
-.products-wrap-top{
+.products-wrap-top {
   background-color: #f9f5f0;
 }
 
-.products-title{
+.products-title {
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
 }
 
-.list-item{
+.list-item {
   border: 1px solid black;
-  font-family: "PTSans", sans-serif;;
+  font-family: 'PT Sans', sans-serif;
 }
 
-.item-title{
+.item-title {
   font-size: 18px;
   line-height: 20px;
   color: #000;
   text-transform: none;
 }
 
-.item-btn-buy{
+.item-btn-buy {
   font-size: 14px;
   line-height: 18px;
   vertical-align: middle;
@@ -256,15 +255,15 @@ li{
   background-color: #63a63e;
 }
 
-.item-btn-buy:hover{
+.item-btn-buy:hover {
   background-color: #5fbb2d;
 }
 
-.item-btn-buy:active{
+.item-btn-buy:active {
   background-color: #518534;
 }
 
-.item-btn-bookmark{
+.item-btn-bookmark {
   font-size: 14px;
   line-height: 18px;
   vertical-align: middle;
@@ -273,16 +272,16 @@ li{
   border: 3px solid #63a63e;
 }
 
-.item-btn-bookmark:hover{
+.item-btn-bookmark:hover {
   border: 3px solid #32425c;
 }
 
-.item-btn-bookmark:active{
+.item-btn-bookmark:active {
   border: 3px solid #32425c;
   opacity: 0.3;
 }
 
-.item-text-discount{
+.item-text-discount {
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
@@ -290,7 +289,7 @@ li{
   text-decoration: line-through;
 }
 
-.item-text-price{
+.item-text-price {
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
@@ -299,25 +298,25 @@ li{
   background-color: #ee3643;
 }
 
-.services{
+.services {
   background-color: #f4f8f9;
 }
 
-.services-title{
+.services-title {
   font-size: 30px;
   line-height: 30px;
   color: #000;
 }
 
-.services-text{
-  font-family:"PTSans", sans-serif;
+.services-text {
+  font-family: 'PT Sans', sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: #000;
   text-transform: none;
 }
 
-.services-menu a{
+.services-menu a {
   font-size: 21px;
   line-height: 30px;
   vertical-align: middle;
@@ -328,32 +327,32 @@ li{
   background-color: #32425c;
 }
 
-.services-menu a:hover{
+.services-menu a:hover {
   background-color: #293449;
 }
 
-.services-slider h2{
+.services-slider h2 {
   font-size: 36px;
   line-height: 36px;
   color: #32425c;
 }
 
-.services-slider p{
-  font-family:"PTSans", sans-serif;
+.services-slider p {
+  font-family: 'PT Sans', sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: #32425c;
   text-transform: none;
 }
 
-.wrap-info h2{
+.wrap-info h2 {
   font-size: 30px;
   line-height: 30px;
   color: #000;
 }
 
-.wrap-info p{
-  font-family:"PTSans", sans-serif;
+.wrap-info p {
+  font-family: 'PT Sans', sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: #000;
@@ -362,103 +361,114 @@ li{
 
 /*////////////////////Footer*/
 
-.footer{
+.footer {
   color: #fff;
   background-color: #32425c;
 }
 
-.footer p{
+.footer p {
   color: #fff;
 }
 
-.footer-top-menu{
+.footer-top-menu {
   font-size: 18px;
   line-height: 24px;
 }
 
-.footer-top-menu a{
+.footer-top-menu a {
   vertical-align: middle;
   text-transform: none;
 
   text-decoration: none;
 }
 
-.footer-top-menu a:hover{
+.footer-top-menu a:hover {
   text-decoration: underline;
 }
 
-.footer-top-menu a:active{
+.footer-top-menu a:active {
   text-decoration: none;
 
   opacity: 0.3;
 }
 
-.footer-botton-menu .phone-btn-footer{
+.footer-botton-menu {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: none;
+}
+
+.footer-botton-menu .footer-phone-btn {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: none;
   color: #fff;
 }
 
-.footer-botton-menu .phone-btn-footer:hover{
+.footer-botton-menu .footer-phone-btn:hover {
+  color: #fff;
   text-decoration: none;
 }
 
-.footer-botton-menu .phone-btn-footer:active{
+.footer-botton-menu .footer-phone-btn:active {
+  color: #fff;
   text-decoration: none;
 }
 
-.footer-botton-menu{
+.footer-botton-menu {
   font-size: 18px;
   line-height: 24px;
 }
 
-.footer-botton-menu a{
+.footer-botton-menu a {
   vertical-align: middle;
   text-transform: none;
   text-decoration: none;
   color: #ffd180;
 }
 
-.footer-botton-menu a:hover{
+.footer-botton-menu a:hover {
   text-decoration: underline;
 }
 
-.footer-botton-menu a:active{
+.footer-botton-menu a:active {
   text-decoration: none;
 
-  opacity: 0.3;
+  color: rgba(255,209,128,0.5);
 }
 
-.footer-bottom_level{
+.footer-bottom-level {
   font-size: 16px;
   line-height: 18px;
 
   background-color: #293449;
 }
 
-.social-network li{
+.social-network li {
   background-color: #212a3a;
 
   border-radius: 50px;
 }
 
-.social-network li:hover{
+.social-network li:hover {
   background-color: #ee3643;
 }
 
-.social-network li:active{
+.social-network li:active {
   background-color: #ee3643;
 }
 
-.footer-bottom_info a{
+.footer-bottom-info a {
   color: #b89d6e;
 }
 
-.footer-bottom_info a:hover{
+.footer-bottom-info a:hover {
   color: #b89d6e;
 
   text-decoration: underline;
 }
 
-.footer-bottom_info a:active{
+.footer-bottom-info a:active {
   color: #ee3643;
 
   text-decoration: none;
@@ -466,11 +476,11 @@ li{
 
 /*////////////////////catalog.html*/
 
-.registration-link-inner{
+.registration-link-inner {
   background-color: #fff;
 }
 
-.registration-link{
+.registration-link {
   font-size: 16px;
   line-height: 18px;
   vertical-align: middle;
@@ -479,16 +489,16 @@ li{
   color: #32425c;
 }
 
-.registration-link:hover{
+.registration-link:hover {
   color: #ee3643;
 }
 
-.registration-link:active{
+.registration-link:active {
   color: #32425c;
   opacity: 0.3;
 }
 
-.registration-link-user{
+.registration-link-user {
   font-size: 21px;
   line-height: 21px;
   vertical-align: middle;
@@ -496,16 +506,16 @@ li{
   color: #000;
 }
 
-.registration-link-user:active{
+.registration-link-user:active {
   color: #000;
   opacity: 0.3;
 }
 
-.breadcrumbs{
-  font-family: "PTSans", sans-serif;
+.breadcrumbs {
+  font-family: 'PT Sans', sans-serif;
 }
 
-.breadcrumbs a{
+.breadcrumbs a {
   color: #000;
   font-size: 13px;
   line-height: 18px;
@@ -513,7 +523,7 @@ li{
   vertical-align: middle;
 }
 
-.catalog-name{
+.catalog-name {
   color: #000;
   font-size: 30px;
   line-height: 30px;
@@ -523,18 +533,18 @@ li{
   background-color: #f2f6f8;
 }
 
-.sorting{
-  font-family: "PTSans", sans-serif;
+.sorting {
+  font-family: 'PT Sans', sans-serif;
   background-color: #f7f3ec;
 }
 
-.sorting-text{
+.sorting-text {
   font-size: 13px;
   line-height: 18px;
   color: #000;
 }
 
-.sorting-btn{
+.sorting-btn {
   font-size: 13px;
   text-transform: uppercase;
   vertical-align: middle;
@@ -544,7 +554,7 @@ li{
   text-decoration-color: #ee3643;
 }
 
-.sorting-btn:hover{
+.sorting-btn:hover {
   font-size: 13px;
   text-transform: uppercase;
   vertical-align: middle;
@@ -554,58 +564,58 @@ li{
   text-decoration-color: #ee3643;
 }
 
-.sorting-btn:active{
+.sorting-btn:active {
   font-size: 13px;
   text-transform: uppercase;
   vertical-align: middle;
   color: #ee3643;
   text-decoration: none;
 }
-.sorting-btn-icon{
+.sorting-btn-icon {
   color: rgba(0,0,0,0.3);
 }
 
-.sorting-btn-icon:hover{
+.sorting-btn-icon:hover {
   color: #000;
 }
 
-.sorting-btn-icon:active{
+.sorting-btn-icon:active {
   color: #ee3643;
 }
 
-.pagination-list{
-  font-family: "PTSans", sans-serif;
+.pagination-list {
+  font-family: 'PT Sans', sans-serif;
 }
 
-.pagination-list li{
+.pagination-list li {
   border: 1px solid #e5e5e5;
 }
 
-.pagination-list li:hover{
+.pagination-list li:hover {
   border: 1px solid #bdc6ca;
 }
 
-.pagination-list li:active{
+.pagination-list li:active {
   border: 1px solid #ee3643;
 }
 
-.pagination-list a{
+.pagination-list a {
   color: #000;
 }
 
-.info-unit{
+.info-unit {
   background-color: #f2f6f8;
 }
 
-.info-unit-title{
+.info-unit-title {
   font-size: 30px;
   line-height: 30px;
   color: #000;
   text-transform: uppercase;
 }
 
-.info-unit-text{
-  font-family: "PTSans", sans-serif;
+.info-unit-text {
+  font-family: 'PT Sans', sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: #000;
