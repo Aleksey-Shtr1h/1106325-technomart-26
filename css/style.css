@@ -112,10 +112,21 @@ li {
 }
 
 .header-phone-btn {
+  font-size: 21px;
+  line-height: 21px;
   color: #ee3643;
 }
 
+.address-text{
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+  text-transform: none;
+}
+
 .header-registration-btn {
+  font-size: 21px;
+  line-height: 21px;
   color: #000;
 }
 
@@ -126,6 +137,10 @@ li {
 .header-registration-btn:active {
   color: #000;
   opacity: 0.3;
+}
+
+.address-text{
+
 }
 
 .header-menu-navigation {
