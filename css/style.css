@@ -103,8 +103,6 @@ padding: 0 10px;
   vertical-align: middle;
   text-transform: none;
 
-  border: none;
-
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -114,12 +112,17 @@ padding: 0 10px;
   align-items: center;
 }
 
+.top-menu-btn {
+  width: 150px;
+}
+
 .top-menu-btn:hover {
   background-color: #212a3a;
 }
 
 .top-menu-btn:active {
   background-color: #161d29;
+  opacity: 0.6;
 }
 
 .header-top-menu-search input {
@@ -143,6 +146,8 @@ padding: 0 10px;
 }
 
 .order-now-btn {
+  width: 150px;
+
   background-color: #63a63e;
 }
 
@@ -152,6 +157,7 @@ padding: 0 10px;
 
 .order-now-btn:active {
   background-color: #518534;
+  opacity: 0.5;
 }
 
 .header-registration .container {
