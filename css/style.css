@@ -11,9 +11,6 @@ body {
   text-transform: uppercase;
 
   background-color: #fff;
-
-  min-width: 1200px;
-  min-height: 3151px;
 }
 
 /*TYPOGRAPHY*/
@@ -39,7 +36,7 @@ li {
 .container {
 width: 960px;
 margin: 0 auto;
-padding: 0 10px;
+/*padding: 0 10px;*/
 }
 
 /*////////////////////Header*/
@@ -145,17 +142,17 @@ padding: 0 10px;
   color: #000;
 }
 
-.order-now-btn {
+.checkout {
   width: 150px;
 
   background-color: #63a63e;
 }
 
-.order-now-btn:hover {
+.checkout:hover {
   background-color: #5fbb2d;
 }
 
-.order-now-btn:active {
+.checkout:active {
   background-color: #518534;
   opacity: 0.5;
 }
@@ -188,6 +185,8 @@ padding: 0 10px;
   vertical-align: middle;
   text-transform: none;
   font-style: italic;
+
+  margin: 0;
 }
 
 .header-registration li {
@@ -272,31 +271,31 @@ padding: 0 10px;
   justify-content: space-between;
 }
 
-.category-service-item1 {
+.category-service-material {
   background-color: #ffbf47;
 
   width: 300px;
 }
 
-.category-service-item2 {
+.category-service-tool {
   background-color: #3bbce3;
 
   width: 300px;
 }
 
-.category-service-item3 {
+.category-service-tech {
   background-color: #dc91d8;
 
   width: 300px;
 }
 
-.category-service-item4 {
+.category-service-discount {
   background-color: #8ed78f;
 
   width: 300px;
 }
 
-.category-service-item5 {
+.category-service-delivery {
   background-color: #ffc047;
 
   width: 300px;
@@ -336,7 +335,9 @@ padding: 0 10px;
   display: -ms-flex;
   display: -o-flex;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: baseline;
 }
 
 .slider-wrap {
@@ -407,33 +408,26 @@ padding: 0 10px;
   color: #32425c;
 }
 
-.products-items ul{
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
+.products-items ul {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+
+  margin-bottom: 20px;
 }
 
-.products-items li{
+.products-items li {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  -o-flex-direction: column;
   flex-direction: column;
-  -ms-align-items: center;
   align-items: center;
 }
 
 .list-item {
   border: 1px solid black;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
 
   width: 220px;
 }
@@ -513,11 +507,6 @@ padding: 0 10px;
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  justify-content: space-between;
-  -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  -o-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -536,11 +525,13 @@ padding: 0 10px;
 }
 
 .services-text {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: #000;
   text-transform: none;
+
+  width: 400px;
 }
 
 .services-wrap-slider{
@@ -574,11 +565,13 @@ padding: 0 10px;
 }
 
 .services-slider p {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: #32425c;
   text-transform: none;
+
+  width: 375px;
 }
 
 .wrap-info .container {
@@ -602,6 +595,7 @@ padding: 0 10px;
   -o-flex-direction: column;
   flex-direction: column;
   justify-content: space-between;
+  width: 535px;
 }
 
 .contacts-info {
@@ -616,6 +610,11 @@ padding: 0 10px;
   -o-flex-direction: column;
   flex-direction: column;
   justify-content: space-between;
+  width: 300px;
+}
+
+.wrap-info-btn {
+  width: 220px;
 }
 
 .wrap-info h2 {
@@ -625,7 +624,7 @@ padding: 0 10px;
 }
 
 .wrap-info p {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: #000;
@@ -658,7 +657,7 @@ padding: 0 10px;
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 }
 
 .footer-top-menu ul {
@@ -674,18 +673,18 @@ padding: 0 10px;
   flex-direction: row;
 }
 
-.footer-top-menu a {
+.footer-top-menu .footer-top-menu-btn {
   vertical-align: middle;
   text-transform: none;
 
   text-decoration: none;
 }
 
-.footer-top-menu a:hover {
+.footer-top-menu .footer-top-menu-btn:hover {
   text-decoration: underline;
 }
 
-.footer-top-menu a:active {
+.footer-top-menu .footer-top-menu-btn:active {
   text-decoration: none;
 
   opacity: 0.3;
@@ -701,7 +700,7 @@ padding: 0 10px;
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 }
 
 .footer-botton-menu ul {
@@ -865,7 +864,16 @@ padding: 0 10px;
 }
 
 .breadcrumbs {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+}
+
+.breadcrumbs {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.breadcrumbs li {
+  margin-right: 38px;
 }
 
 .breadcrumbs a {
@@ -876,6 +884,15 @@ padding: 0 10px;
   vertical-align: middle;
 }
 
+.catalog-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-title {
+  background-color: #f7f3ec;
+}
+
 .catalog-name {
   color: #000;
   font-size: 30px;
@@ -884,17 +901,30 @@ padding: 0 10px;
   vertical-align: middle;
 
   background-color: #f2f6f8;
+
+  padding: 32px 0px 34px 0px;
+}
+
+.filter {
+  width: 220px;
 }
 
 .sorting {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   background-color: #f7f3ec;
+
+  display: flex;
+  align-items: center;
+
+  width: 100%;
 }
 
 .sorting-text {
   font-size: 13px;
   line-height: 18px;
   color: #000;
+
+  margin: 0px 140px 0px 0px;
 }
 
 .sorting-btn {
@@ -905,6 +935,8 @@ padding: 0 10px;
   text-decoration: underline;
   text-decoration-style: dotted;
   text-decoration-color: #ee3643;
+
+  padding: 0px 30px;
 }
 
 .sorting-btn:hover {
@@ -937,7 +969,7 @@ padding: 0 10px;
 }
 
 .pagination-list {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
 }
 
 .pagination-list li {
@@ -968,7 +1000,7 @@ padding: 0 10px;
 }
 
 .info-unit-text {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: #000;
