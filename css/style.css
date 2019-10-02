@@ -985,7 +985,7 @@ input[type="radio"].visually-hidden {
 }
 
 .list-item .actions {
-  /*display: none;*/
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
