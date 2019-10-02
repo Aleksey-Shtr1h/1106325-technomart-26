@@ -16,8 +16,12 @@
               <img src="img/logo-technomart.svg" width="109" height="19" alt="Logo">
             </a>
             <form class="main-search" action="#" name="Поиск" method="post">
+              <i class="icon-search">
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
+                </svg>
+              </i>
               <label for="search" aria-label="Поиск"></label>
-              <input class="qwert" type="search" name="Поиск" id="search" placeholder="Поиск:">
+              <input class="search-input" type="search" name="Поиск" id="search" placeholder="Поиск:">
             </form>
           </div>
           <div class="header-top-menu-btn">
@@ -149,7 +153,7 @@
           </div>
           <div class="products-items">
             <ul>
-              <li class="list-item">
+              <li class="list-item filling-4x1">
                 <!-- <div class="flag"></div> -->
                 <div class="actions">
                   <a class="item-btn-buy" href="#">Купить</a>
@@ -162,7 +166,7 @@
                 <p class="item-text-discount">32 500 Р.</p>
                 <p class="item-text-price">25 500 Р.</p>
               </li>
-              <li class="list-item">
+              <li class="list-item filling-4x1">
                 <!-- <div class="flag"></div> -->
                 <div class="actions">
                   <a class="item-btn-buy" href="#">Купить</a>
@@ -175,7 +179,7 @@
                 <p class="item-text-discount">22500 Р.</p>
                 <p class="item-text-price">15500 Р.</p>
               </li>
-              <li class="list-item">
+              <li class="list-item filling-4x1">
                 <!-- <div class="flag"></div> -->
                 <div class="actions">
                   <a class="item-btn-buy" href="#">Купить</a>
@@ -188,7 +192,7 @@
                 <p class="item-text-discount">30500 Р.</p>
                 <p class="item-text-price">25500 Р.</p>
               </li>
-              <li class="list-item">
+              <li class="list-item filling-4x1">
                 <div class="flag"></div>
                 <div class="actions">
                   <a class="item-btn-buy" href="#">Купить</a>
@@ -287,9 +291,9 @@
                 <li>
                   <h2>Доставка</h2>
                   <p>
-                    Мы с удовольствием доставим ваш товар прямо
-                    к вашему подъезду совершенно бесплатно!
-                    Ведь мы неплохо заработаем,
+                    Мы с удовольствием доставим ваш товар прямо<br>
+                    к вашему подъезду совершенно бесплатно!<br>
+                    Ведь мы неплохо заработаем,<br>
                     поднимая его на ваш этаж!
                   </p>
                 </li>
@@ -320,7 +324,7 @@
       <div class="wrap-info">
         <div class="container">
           <section class="box-info">
-            <h2>Компания "Техномарт"</h2>
+            <h2>Компания «Техномарт»</h2>
             <p class="wrap-info-text">
               Настоящий мужской шоппинг начинается здесь!
               Огромный выбор товаров для ремонта и<br>
@@ -330,10 +334,10 @@
               Мы можем доставить ваш товар в самые отдаленные точки России!<br>
               Техномарт работает со многими транспортными компаниями:
             </p>
-            <ul>
-              <li>Деловые линии</li>
-              <li>Авторейдинг</li>
-              <li>ЖелДорЭкспедиция</li>
+            <ul class="transport-company">
+              <li class="transport-company-item">Деловые линии</li>
+              <li class="transport-company-item">Автотрейдинг</li>
+              <li class="transport-company-item">ЖелДорЭкспедиция</li>
             </ul>
             <a class="main-btn box-info-btn" href="#">Подробнее о компании</a>
           </section>
@@ -403,11 +407,11 @@
 
       <div class="footer-bottom-level">
         <div class="container">
-          <p class="footer-bottom-text">© 2010–2019 Компания «Техномарт» <br>Все права защищены</p>
+          <p class="footer-bottom-text">© 2010–2019 Компания «Техномарт» Все права защищены</p>
           <div class="social-network">
             <ul>
-              <li>
-                <a class="social-button" clas href="#" aria-label="Группа в Вконтакте">
+              <li class="social-item">
+                <a class="social-button" href="#" aria-label="Группа в Вконтакте">
                   <span class="visually-hidden">
                     Вконтакте
                   </span>
@@ -415,7 +419,7 @@
                   </svg>
                 </a>
               </li>
-              <li>
+              <li class="social-item">
                 <a class="social-button" href="#" aria-label="Группа в Фейсбуке">
                   <span class="visually-hidden">
                     Фейсбук
@@ -424,7 +428,7 @@
                   </svg>
                 </a>
               </li>
-              <li>
+              <li class="social-item">
                 <a class="social-button" href="#" aria-label="Группа в Инстаграме">
                   <span class="visually-hidden">
                     Инстаграм
@@ -437,17 +441,18 @@
           </div>
           <div class="footer-bottom-info">
             <p class="feedback">
-              Обратная связь:
+              <b>Обратная связь:</b>
               <a href="mailto:mail@htmlacademy.ru" aria-label="Написать на почту">mail@htmlacademy.ru</a>
             </p>
             <p class="developer-layout">
-              Разработано -
-              <a href="https://htmlacademy.ru/intensive/htmlcss">https://htmlacademy.ru</a>
+              <b>Разработано -</b>
+              <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
             </p>
           </div>
         </div>
       </div>
     </footer>
+
     <section class="pop-up">
       <h2 class="visually-hidden">Напишите нам</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
