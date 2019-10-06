@@ -2365,6 +2365,8 @@ input[type="radio"].visually-hidden {
 }
 
 .modal {
+  display: none;
+
   position: fixed;
 
   color: #000000;
@@ -2375,10 +2377,14 @@ input[type="radio"].visually-hidden {
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
 
+.modal-show {
+  display: block;
+}
+
 /*Write-us*/
 
 .modal-write-us {
-  display: none;
+
 
   top: 114px;
   left: 50%;
@@ -2514,8 +2520,6 @@ input[type="radio"].visually-hidden {
 /*Modal-map*/
 
 .modal-map {
-  display: none;
-
   top: 50%;
   left: 50%;
 
@@ -2534,7 +2538,6 @@ input[type="radio"].visually-hidden {
 /*Modal-add-cart*/
 
 .modal-add-cart {
-  display: none;
   top: 114px;
   left: 50%;
 
