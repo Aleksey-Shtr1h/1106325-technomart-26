@@ -469,34 +469,77 @@
       </div>
     </footer>
 
-    <section class="modal pop-up">
+    <section class="modal modal-write-us">
+      <div class="decorative-border"></div>
       <h2 class="visually-hidden">Напишите нам</h2>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label for="user-login">
-            Ваше имя:
-          </label>
-          <input id="user-login" type="text" name="user-login" placeholder="Имя Фамилия">
-        </p>
-        <p>
-          <label for="user-email">
-            Ваш e-mail:
-          </label>
-          <input id="user-email" type="email" name="user-email" placeholder="email@example.com">
-        </p>
-        <p>
-          Текст письма:
-        </p>
-        <p>
-          <textarea name="user-text" id="user-text" cols="30" rows="10" maxlength="999" placeholder="В свободной форме"></textarea>
-        </p>
-        <button type="submit">
-          Отправить
+      <form class="form-write-us" action="https://echo.htmlacademy.ru" method="post">
+        <div class="wrap-top-write-us">
+          <div class="modal-user-info">
+            <p>
+              <label for="modal-user-login">
+                Ваше имя:
+              </label>
+              <input id="modal-user-login" type="text" name="modal-user-login" placeholder="Имя Фамилия">
+            </p>
+            <p>
+              <label for="user-email">
+                Ваш e-mail:
+              </label>
+              <input class="modal-user-email" id="user-email" type="email" name="user-email" placeholder="email@example.com">
+            </p>
+          </div>
+          <p>
+            <label for="user-text">
+              Текст письма:
+            </label>
+            <textarea name="user-text" id="user-text" cols="30" rows="10" maxlength="999" placeholder="В свободной форме"></textarea>
+          </p>
+        </div>
+        <div class="wrap-bottom-write-us">
+          <button class="main-btn" type="submit">
+            Отправить
+          </button>
+        </div>
+      </form>
+      <button class="modal-close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+    </section>
+
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <p>
+        <img src="img/map_pop_up.jpg" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      </p>
+      <button class="modal-close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+    </section>
+
+    <section class="modal modal-add-cart">
+      <div class="decorative-border"></div>
+      <h2 class="visually-hidden">Добавление в корзину</h2>
+      <div class="wrap-modal-cart-top">
+        <img src="img/modal-checkbox.png" alt="checkbox">
+        <p class="modal-cart-text">
+        Товар добавлен в корзину!
+      </p>
+      </div>
+      <div class="wrap-modal-cart-bottom">
+        <form class="form-write-us" action="https://echo.htmlacademy.ru" method="post">
+        <button class="main-btn" type="submit">
+          Оформить звказ
         </button>
-        <button type="button" aria-label="Закрыть">
-          Закрыть
+        <button class="continue-shopping" type="button">
+          Продолжить покупки
         </button>
       </form>
+      </div>
+
+      <button class="modal-close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+
     </section>
 
   </body>
