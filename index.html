@@ -53,10 +53,10 @@
           <ul class="login-open">
             <li class="login-open-item">
               <a class="come-in-btn" href="#" aria-label="Войти в личный кабинет">Войти</a>
-              <span class="login-open-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/><path fill="#c5c5c5" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/>
-                </svg>
-              </span>
+              <svg class="login-open-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="#c5c5c5">
+                <path d="M14.875 8.5L6 0v6H0v5h6v6z"/>
+                <path d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/>
+              </svg>
             </li>
             <li class="login-open-item">
               <a class="header-registration-btn" href="#" aria-label="Зарегистрировать личный кабинет">Регистрация</a>
@@ -163,7 +163,7 @@
           </div>
           <div class="products-items">
             <ul>
-              <li class="list-item filling-4x1">
+              <li class="list-item-index">
                 <!-- <div class="flag"></div> -->
                 <div class="actions">
                   <a class="item-btn-buy" href="#">Купить</a>
@@ -176,7 +176,7 @@
                 <p class="item-text-discount">32 500 Р.</p>
                 <p class="item-text-price">25 500 Р.</p>
               </li>
-              <li class="list-item filling-4x1">
+              <li class="list-item-index">
                 <!-- <div class="flag"></div> -->
                 <div class="actions">
                   <a class="item-btn-buy" href="#">Купить</a>
@@ -189,7 +189,7 @@
                 <p class="item-text-discount">22500 Р.</p>
                 <p class="item-text-price">15500 Р.</p>
               </li>
-              <li class="list-item filling-4x1">
+              <li class="list-item-index">
                 <!-- <div class="flag"></div> -->
                 <div class="actions">
                   <a class="item-btn-buy" href="#">Купить</a>
@@ -202,7 +202,7 @@
                 <p class="item-text-discount">30500 Р.</p>
                 <p class="item-text-price">25500 Р.</p>
               </li>
-              <li class="list-item filling-4x1">
+              <li class="list-item-index">
                 <div class="flag"></div>
                 <div class="actions">
                   <a class="item-btn-buy" href="#">Купить</a>
@@ -360,7 +360,7 @@
           <section class="contacts-info">
             <h2>Контакты</h2>
             <p class="wrap-info-text">Вы можете забрать товар сами,<br> заехав в наш офис:</p>
-            <a class="map" href="#">
+            <a class="map contacts-button-map" href="#">
               <img src="img/map.png" alt="Карта">
             </a>
             <a class="main-btn contacts-info-btn" href="#">Заблудились? Напишите НАМ!</a>
@@ -485,14 +485,14 @@
               <label for="user-email">
                 Ваш e-mail:
               </label>
-              <input class="modal-user-email" id="user-email" type="email" name="user-email" placeholder="email@example.com">
+              <input class="modal-user-email" id="user-email" type="email" name="modal-user-email" placeholder="email@example.com">
             </p>
           </div>
           <p>
             <label for="user-text">
               Текст письма:
             </label>
-            <textarea name="user-text" id="user-text" cols="30" rows="10" maxlength="999" placeholder="В свободной форме"></textarea>
+            <textarea name="modal-user-text" id="user-text" cols="30" rows="10" maxlength="999" placeholder="В свободной форме"></textarea>
           </p>
         </div>
         <div class="wrap-bottom-write-us">
@@ -501,16 +501,6 @@
           </button>
         </div>
       </form>
-      <button class="modal-close" type="button">
-        <span class="visually-hidden">Закрыть</span>
-      </button>
-    </section>
-
-    <section class="modal modal-map">
-      <h2 class="visually-hidden">Как до нас добраться</h2>
-      <p>
-        <img src="img/map_pop_up.jpg" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-      </p>
       <button class="modal-close" type="button">
         <span class="visually-hidden">Закрыть</span>
       </button>
@@ -527,8 +517,8 @@
       </div>
       <div class="wrap-modal-cart-bottom">
         <form class="form-write-us" action="https://echo.htmlacademy.ru" method="post">
-        <button class="main-btn" type="submit">
-          Оформить звказ
+        <button class="main-btn issue-btn" type="submit">
+          Оформить заказ
         </button>
         <button class="continue-shopping" type="button">
           Продолжить покупки
@@ -536,6 +526,18 @@
       </form>
       </div>
 
+      <button class="modal-close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+    </section>
+
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Карта</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="940" height="446" allowfullscreen>
+      </iframe>
+      <p>
+        <img src="img/map_pop_up.jpg" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      </p>
       <button class="modal-close" type="button">
         <span class="visually-hidden">Закрыть</span>
       </button>

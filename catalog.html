@@ -53,11 +53,17 @@
         <div class="login-user">
           <div class="registration-name-inner">
             <a class="registration-link-user" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18"><path fill="#c5c5c5" d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"/></svg>
+              <svg class="link-user-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" fill="#c5c5c5">
+                <path d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"/>
+              </svg>
               Равшан Джамшутович
             </a>
             <a class="logout" href="#" aria-label="Выйти из личного кабинета">
-              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17"><g fill="#c5c5c5"><path fill="#c5c5c5" d="M21 8.5L12.125 0v6h-6v5h6v6z"/><path fill="#c5c5c5" d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/></g>
+              <svg class="logout-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17" fill="#c5c5c5">
+                <g>
+                  <path d="M21 8.5L12.125 0v6h-6v5h6v6z"/>
+                  <path d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/>
+                </g>
               </svg>
             </a>
           </div>
@@ -149,7 +155,7 @@
               <legend>Производители:</legend>
               <ul>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="BOSCH" id="filter-BOSCH" checked disabled>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="BOSCH" id="filter-BOSCH" checked>
                   <label for="filter-BOSCH">BOSCH</label>
                 </li>
                 <li class="filter-option">
@@ -191,11 +197,11 @@
         <section class="catalog-width">
           <div class="sorting">
             <p class="sorting-text">Сортировка:</p>
-            <a class="sorting-btn" href="#">По цене</a>
+            <a class="sorting-btn sorting-btn-avtive" href="#">По цене</a>
             <a class="sorting-btn" href="#">По типу</a>
             <a class="sorting-btn" href="#">По функционалу</a>
             <div class="wrap-sorting-btn-icon">
-              <a class="sorting-btn-icon" href="#">
+              <a class="sorting-btn-icon sorting-btn-icon-active" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/>
                 </svg>
               </a>
@@ -207,7 +213,7 @@
           </div>
           <div class="products-items">
             <ul>
-              <li class="list-item filling-3x1">
+              <li class="list-item-catalog">
                 <!-- <div class="flag"></div> -->
                 <div class="actions">
                   <a class="item-btn-buy" href="#">Купить</a>
@@ -220,7 +226,7 @@
                 <p class="item-text-discount">22500 Р.</p>
                 <p class="item-text-price">15500 Р.</p>
               </li>
-              <li class="list-item filling-3x1">
+              <li class="list-item-catalog">
                 <!-- <div class="flag"></div> -->
                 <div class="actions">
                   <a class="item-btn-buy" href="#">Купить</a>
@@ -233,7 +239,7 @@
                 <p class="item-text-discount">30500 Р.</p>
                 <p class="item-text-price">25500 Р.</p>
               </li>
-              <li class="list-item filling-3x1">
+              <li class="list-item-catalog">
                 <div class="flag"></div>
                 <div class="actions">
                   <a class="item-btn-buy" href="#">Купить</a>
@@ -246,7 +252,7 @@
                 <p class="item-text-discount"></p>
                 <p class="item-text-price">12500 Р.</p>
               </li>
-              <li class="list-item filling-3x1">
+              <li class="list-item-catalog">
                 <!-- <div class="flag"></div> -->
                 <div class="actions">
                   <a class="item-btn-buy" href="#">Купить</a>
@@ -259,8 +265,8 @@
                 <p class="item-text-discount">22500 Р.</p>
                 <p class="item-text-price">15500 Р.</p>
               </li>
-              <li class="list-item filling-3x1">
-                <!-- <div class="flag"></div> -->
+              <li class="list-item-catalog">
+                <div class="flag"></div>
                 <div class="actions">
                   <a class="item-btn-buy" href="#">Купить</a>
                   <a class="item-btn-bookmark" href="#">В закладки</a>
@@ -272,8 +278,8 @@
                 <p class="item-text-discount">30500 Р.</p>
                 <p class="item-text-price">25500 Р.</p>
               </li>
-              <li class="list-item filling-3x1">
-                <div class="flag"></div>
+              <li class="list-item-catalog">
+                <!-- <div class="flag"></div> -->
                 <div class="actions">
                   <a class="item-btn-buy" href="#">Купить</a>
                   <a class="item-btn-bookmark" href="#">В закладки</a>
@@ -285,8 +291,8 @@
                 <p class="item-text-discount"></p>
                 <p class="item-text-price">12500 Р.</p>
               </li>
-              <li class="list-item filling-3x1">
-                <!-- <div class="flag"></div> -->
+              <li class="list-item-catalog">
+                <div class="flag"></div>
                 <div class="actions">
                   <a class="item-btn-buy" href="#">Купить</a>
                   <a class="item-btn-bookmark" href="#">В закладки</a>
@@ -298,7 +304,7 @@
                 <p class="item-text-discount">22500 Р.</p>
                 <p class="item-text-price">15500 Р.</p>
               </li>
-              <li class="list-item filling-3x1">
+              <li class="list-item-catalog">
                 <!-- <div class="flag"></div> -->
                 <div class="actions">
                   <a class="item-btn-buy" href="#">Купить</a>
@@ -311,8 +317,8 @@
                 <p class="item-text-discount">30500 Р.</p>
                 <p class="item-text-price">25500 Р.</p>
               </li>
-              <li class="list-item filling-3x1">
-                <div class="flag"></div>
+              <li class="list-item-catalog">
+                <!-- <div class="flag"></div> -->
                 <div class="actions">
                   <a class="item-btn-buy" href="#">Купить</a>
                   <a class="item-btn-bookmark" href="#">В закладки</a>
@@ -366,6 +372,7 @@
           <div class="footer-logo">
             <a href="#">
               <img src="img/logo-technomart_2.svg" alt="logo">
+              <div class="footer-logo-shadow"></div>
             </a>
           </div>
           <div class="footer-phone-address">
@@ -457,20 +464,32 @@
     </div>
   </footer>
 
-  <section class="buy-object">
-    <h2 class="visually-hidden">Покупка товара</h2>
-    <p>
-      Товар добавлен в корзину!
-    </p>
-    <button type="button">
-      ОФОРМИТЬ ЗАКАЗ
-    </button>
-    <button type="button">
-      ПРОДОЛЖИТЬ ПОКУПКИ
-    </button>
-    <button type="button" aria-label="Закрыть">
-      Закрыть
+  <section class="modal modal-add-cart">
+    <div class="decorative-border"></div>
+    <h2 class="visually-hidden">Добавление в корзину</h2>
+    <div class="wrap-modal-cart-top">
+      <img src="img/modal-checkbox.png" alt="checkbox">
+      <p class="modal-cart-text">
+        Товар добавлен в корзину!
+      </p>
+    </div>
+    <div class="wrap-modal-cart-bottom">
+      <form class="form-write-us" action="https://echo.htmlacademy.ru" method="post">
+        <button class="main-btn" type="submit">
+          Оформить звказ
+        </button>
+        <button class="continue-shopping" type="button">
+          Продолжить покупки
+        </button>
+      </form>
+    </div>
+
+    <button class="modal-close" type="button">
+      <span class="visually-hidden">Закрыть</span>
     </button>
   </section>
+
+  <script src="js/main.js"></script>
+
 </body>
 </html>
