@@ -38,9 +38,9 @@ var write_us_choice = document.querySelector('.modal-write-us');
 var close_btn_form = write_us_choice.querySelector('.modal-close');
 
 var sel_form_write_us = write_us_choice.querySelector('.form-write-us');
-var login_input_form = write_us_choice.querySelector('[name=modal-user-login]')
+var login_input_form = write_us_choice.querySelector('[name=modal-user-login]');
 var password_input_form = write_us_choice.querySelector('[name=modal-user-email]');
-var text_input_form = write_us_choice.querySelector('[name=modal-user-text]')
+var text_input_form = write_us_choice.querySelector('[name=modal-user-text]');
 
 var isStorageSupport = true;
 var storage = "";
@@ -63,8 +63,6 @@ write_us_link.addEventListener('click', function(evt) {
   else {
     login_input_form.focus();
   }
-
-  login_input_form.focus()
 });
 
 close_btn_form.addEventListener('click', function(evt) {
@@ -74,8 +72,10 @@ close_btn_form.addEventListener('click', function(evt) {
 });
 
 sel_form_write_us.addEventListener('submit', function(evt) { //отказ отправлять форму
-  if (!login_input_form || !password_input_form) {
+  if (!login_input_form.value || !password_input_form.value || !text_input_form.value) {
     evt.preventDefault();
+    write_us_choice.classList.remove('modal-error');
+    write_us_choice.offsetWidth = write_us_choice.offsetWidth;
     write_us_choice.classList.add('modal-error');
   }
   else {
@@ -83,6 +83,7 @@ sel_form_write_us.addEventListener('submit', function(evt) { //отказ отп
       localStorage.setItem("login_input_form", login.value);
     }
   }
+  alert("Пожалуйста, введите имя и почту, потом введите сообщение");
 });
 
 // Игнорирование событий при иконке закрыть
