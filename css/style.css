@@ -702,20 +702,20 @@ input[type="radio"].visually-hidden {
   border-bottom: 5px solid  #293449;
 }
 
-.menu-navigation-item:hover {
-  background-color: #293449;
-}
-
-.menu-navigation-item:active {
-  background-color: #1d2739;
-}
-
 .header-menu-navigation a {
   display: block;
   padding-top: 20px;
   padding-right: 30px;
   padding-bottom: 18px;
   padding-left: 30px;
+}
+
+.header-menu-navigation a:hover {
+  background-color: #293449;
+}
+
+.header-menu-navigation a:active {
+  background-color: #1d2739;
 }
 
 /*--------------------Main--------------------*/
