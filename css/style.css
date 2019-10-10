@@ -220,6 +220,7 @@ input[type="radio"].visually-hidden {
   color: #fff;
   font-size: 17px;
   line-height: 18px;
+  opacity: 1;
 }
 
 .search-input:-ms-input-placeholder {
@@ -1487,6 +1488,7 @@ input[type="radio"].visually-hidden {
 .list-brands:nth-child(4n) {
   margin-right: 0;
 }
+
 
 /*Services*/
 
