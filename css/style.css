@@ -99,6 +99,8 @@ input[type="radio"].visually-hidden {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .header-top-menu-search,
@@ -1489,6 +1491,9 @@ input[type="radio"].visually-hidden {
   margin-right: 0;
 }
 
+.list-brands img {
+  max-width: 100%;
+}
 
 /*Services*/
 
