@@ -48,7 +48,7 @@ if (document.querySelector('.index')) {
   var storage = "";
 
   try {
-  storage = localStorage.getItem("login_input_form"); //если нет хранилища
+  storage = localStorage.getItem("login_input_form");
 }
 catch (err) {
   isStorageSupport = false;
@@ -58,7 +58,7 @@ write_us_link.addEventListener('click', function(evt) {
   evt.preventDefault();
   write_us_choice.classList.add('modal-show');
 
-  if (storage) {               //фокусировка на пароль, если вбит логин
+  if (storage) {
     login.value = storage;
     password_input_form.focus();
   }
