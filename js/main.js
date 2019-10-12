@@ -1,5 +1,4 @@
 if (document.querySelector('.index, .catalog')) {
-  // Модальное окно 'Купить'
   var buy_btn_link = document.querySelectorAll('.item-btn-buy');
   var add_cart_choice = document.querySelector('.modal-add-cart');
 
@@ -31,9 +30,7 @@ if (document.querySelector('.index, .catalog')) {
     }
   });
 }
-// -------------------------------------------------------------------
 if (document.querySelector('.index')) {
-  // Модальное окно 'Написать нам'
   var write_us_link = document.querySelector('.contacts-info-btn');
   var write_us_choice = document.querySelector('.modal-write-us');
 
@@ -87,7 +84,6 @@ sel_form_write_us.addEventListener('submit', function(evt) { //отказ отп
   }
 });
 
-// Игнорирование событий при иконке закрыть
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
@@ -97,9 +93,6 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
-// -------------------------------------------------------------------
-
-// Модальное окно 'Показать карту'
 
 var map_link = document.querySelector('.contacts-button-map');
 var map_choice = document.querySelector('.modal-map')
