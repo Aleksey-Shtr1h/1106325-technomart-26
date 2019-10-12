@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/min.style.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
   </head>
   <body class="index">
     <header class="header">
@@ -121,10 +122,9 @@
             <div class="slider-wrap">
               <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
               <input class="visually-hidden" type="radio" id="product-2" name="toggle">
-              <input class="visually-hidden" type="radio" id="product-3" name="toggle">
               <div class="slider-controls-arrow">
-                <label class="slider-controls-item slider-controls-item--1 slider-arrow-left" for="product-1"></label>
-                <label class="slider-controls-item slider-controls-item--2 slider-arrow-right" for="product-2"></label>
+                <label class="slider-controls-item slider-controls-item--1 slider-arrow-left" for="product-1" tabindex="0"></label>
+                <label class="slider-controls-item slider-controls-item--2 slider-arrow-right" for="product-2" tabindex="0"></label>
               </div>
               <div class="slider-controls">
                 <label class="slider-controls-item slider-controls-item--1" for="product-1"></label>
@@ -165,7 +165,7 @@
           </div>
           <div class="products-items">
             <ul>
-              <li class="list-item-index">
+              <li class="list-item-index" tabindex="0">
                 <!-- <div class="flag"></div> -->
                 <div class="actions">
                   <a class="item-btn-buy" href="#">Купить</a>
@@ -178,7 +178,7 @@
                 <p class="item-text-discount">32 500 Р.</p>
                 <p class="item-text-price">25 500 Р.</p>
               </li>
-              <li class="list-item-index">
+              <li class="list-item-index" tabindex="0">
                 <!-- <div class="flag"></div> -->
                 <div class="actions">
                   <a class="item-btn-buy" href="#">Купить</a>
@@ -191,7 +191,7 @@
                 <p class="item-text-discount">22500 Р.</p>
                 <p class="item-text-price">15500 Р.</p>
               </li>
-              <li class="list-item-index">
+              <li class="list-item-index" tabindex="0">
                 <!-- <div class="flag"></div> -->
                 <div class="actions">
                   <a class="item-btn-buy" href="#">Купить</a>
@@ -204,7 +204,7 @@
                 <p class="item-text-discount">30500 Р.</p>
                 <p class="item-text-price">25500 Р.</p>
               </li>
-              <li class="list-item-index">
+              <li class="list-item-index" tabindex="0">
                 <div class="flag"></div>
                 <div class="actions">
                   <a class="item-btn-buy" href="#">Купить</a>
@@ -362,7 +362,7 @@
             <h2>Контакты</h2>
             <p class="wrap-info-text">Вы можете забрать товар сами,<br> заехав в наш офис:</p>
             <a class="map contacts-button-map" href="#">
-              <img src="img/map.png" alt="Карта">
+              <img src="img/map.png" width="300" height="158" alt="Карта">
             </a>
             <a class="main-btn contacts-info-btn" href="#">Заблудились? Напишите НАМ!</a>
           </div>
@@ -377,7 +377,7 @@
           <div class="footer-left">
             <div class="footer-logo">
               <a href="#">
-                <img src="img/logo-technomart_2.svg" alt="logo">
+                <img src="img/logo-technomart_2.svg" width="138" height="23" alt="logo">
                 <div class="footer-logo-shadow"></div>
               </a>
             </div>
@@ -511,7 +511,7 @@
       <div class="decorative-border"></div>
       <h2 class="visually-hidden">Добавление в корзину</h2>
       <div class="wrap-modal-cart-top">
-        <img src="img/modal-checkbox.png" alt="checkbox">
+        <img src="img/modal-checkbox.png" width="66" height="66" alt="Товар добавлен">
         <p class="modal-cart-text">
         Товар добавлен в корзину!
       </p>
