@@ -581,14 +581,6 @@ input[type="radio"].visually-hidden {
   fill: #c5c5c5;
 }
 
-.logout path {
-
-}
-
-.logout path:hover {
-
-}
-
 .logout path:active {
   fill: #c5c5c5;
 }
@@ -960,7 +952,6 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
   background-size: cover;
 
-
   margin-left: 25px;
 }
 
@@ -1113,9 +1104,7 @@ input[type="radio"].visually-hidden {
   background-color: #f9f5f0;
 
   display: -webkit-box;
-
   display: -ms-flexbox;
-
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -1841,10 +1830,6 @@ input[type="radio"].visually-hidden {
   text-transform: none;
 }
 
-.footer-right {
-
-}
-
 .footer-right a {
   display: block;
 }
@@ -2054,7 +2039,6 @@ input[type="radio"].visually-hidden {
 .feedback {
   margin-top: 0;
   margin-bottom: 0;
-
 }
 
 .developer-layout {
