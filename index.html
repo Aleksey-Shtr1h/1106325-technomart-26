@@ -5,7 +5,8 @@
     <title>Главная</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&ampPT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <!-- <link rel="stylesheet" href="css/style.min.css"> -->
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="index">
     <header class="header">
@@ -13,9 +14,9 @@
         <h2 class="visually-hidden">Информационное меню покупок</h2>
         <div class="container">
           <div class="header-top-menu-search">
-            <a class="header-logo" href="#">
+            <div class="header-logo">
               <img src="img/logo-technomart.svg" width="109" height="19" alt="Logo">
-            </a>
+            </div>
             <div class="heder-logo-shadow"></div>
             <form class="main-search" action="#" name="Поиск" method="post">
               <label for="search" aria-label="Поиск"></label>
@@ -228,7 +229,9 @@
             <ul>
               <li class="list-brands">
                 <a href="#" aria-label="Производитель Бош">
+                  <p>
                   <img src="img/bosch.jpg" width="126" height="37" alt="BOSCH">
+                  </p>
                 </a>
               </li>
               <li class="list-brands">
@@ -238,7 +241,9 @@
               </li>
               <li class="list-brands">
                 <a href="#" aria-label="Производитель Деволт">
+                  <p>
                   <img src="img/dewalt.jpg" width="146" height="44" alt="DeWalt">
+                  </p>
                 </a>
               </li>
               <li class="list-brands">
@@ -287,13 +292,19 @@
             <div class="services-menu">
               <ul class="services-menu-list">
                 <li class="services-menu-item">
-                  <label class="slider-delivery-btn" for="slider-delivery-btn">Доставка</label>
+                  <label class="slider-delivery-btn" for="slider-delivery-btn">
+                    Доставка
+                  </label>
                 </li>
                 <li class="services-menu-item">
-                  <label class="slider-guarantee-btn" for="slider-guarantee-btn">Гарантия</label>
+                  <label class="slider-guarantee-btn" for="slider-guarantee-btn">
+                    Гарантия
+                  </label>
                 </li>
                 <li class="services-menu-item">
-                  <label class="slider-credit-btn" for="slider-credit-btn">Кредит</label>
+                  <label class="slider-credit-btn" for="slider-credit-btn">
+                    Кредит
+                  </label>
                 </li>
               </ul>
             </div>
@@ -372,11 +383,9 @@
         <div class="container">
           <div class="footer-left">
             <div class="footer-logo">
-              <a href="#">
-                <img src="img/logo-technomart_2.svg" width="138" height="23" alt="logo">
-                <div class="footer-logo-shadow"></div>
-              </a>
+              <img src="img/logo-technomart_2.svg" width="138" height="23" alt="logo">
             </div>
+            <div class="footer-logo-shadow"></div>
             <div class="footer-phone-address">
               <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
               <a class="footer-phone-btn" href="tel:78125550555" aria-label="Телефон магазина">+7 (812) 555-05-55</a>
