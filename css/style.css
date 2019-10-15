@@ -1436,7 +1436,11 @@ input[type="radio"].visually-hidden {
   box-shadow: 0px 4px 10px 0px rgba(41, 52, 73, 0.5);
 }
 
-.list-brands:active {
+.list-brands:active img {
+  opacity: 0.3;
+}
+
+.list-brands img:active {
   opacity: 0.3;
 }
 
@@ -2262,7 +2266,22 @@ input[type="radio"].visually-hidden {
 }
 
 .max-price {
+  position: relative;
+
   text-align: right;
+}
+
+.max-price:before {
+  content: "";
+
+  position: absolute;
+  top: 17px;
+  left: -4px;
+
+  width: 10px;
+  height: 1px;
+
+  background-color: #444444;
 }
 
 .manufacturers {
