@@ -716,7 +716,9 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 }
 
-.category-service .flag {
+.flag::after {
+  content: '';
+
   position: absolute;
   top: 0px;
   right: 0px;
@@ -1195,21 +1197,6 @@ input[type="radio"].visually-hidden {
   margin-right: 0;
 }
 
-.list-item-index .flag,
-.list-item-catalog .flag {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-
-  width: 60px;
-  height: 60px;
-
-  overflow: hidden;
-  z-index: 4;
-
-  background: url(../img/new-flag.png) no-repeat 0 0;
-}
-
 .list-item-index .actions,
 .list-item-catalog .actions {
   display: none;
@@ -1348,8 +1335,8 @@ input[type="radio"].visually-hidden {
   border-radius: 3px;
 }
 
-.list-item-index .item-text-price:after,
-.list-item-catalog .item-text-price:after {
+.list-item-index .item-text-price::after,
+.list-item-catalog .item-text-price::after {
   content: "";
 
   position: absolute;
@@ -2271,7 +2258,7 @@ input[type="radio"].visually-hidden {
   text-align: right;
 }
 
-.max-price:before {
+.max-price::before {
   content: "";
 
   position: absolute;
